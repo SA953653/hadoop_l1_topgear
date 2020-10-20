@@ -25,10 +25,10 @@ EmpProj_groupBy_Pid = GROUP EmpProj BY projectID;
 Emp_Effort_Sum = foreach EmpProj_groupBy_Pid Generate 
    (EmpProj.EmpID,EmpProj.projectID),SUM(EmpProj.EffortHrs);
 pre_final_data = JOIN Emp_Effort_Sum BY EmpID LEFT OUTER, Employee BY EmpID;
-
+<br/>
 c. Required Output columns: projectID, empID, empName, totalEffort
 final_data = foreach pre_final_data generate $2, $1, $4, $3;
-
+<br/>
 d. Save the output to a folder in your home directory in hdfs
 STORE final_data INTO '/user/hadoop/Emp_Effort_Sum/' USING PigStorage (',');
 </pre>
