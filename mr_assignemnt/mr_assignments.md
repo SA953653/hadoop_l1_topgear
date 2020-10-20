@@ -6,3 +6,7 @@ hdfs dfs -copyFromLocal /home/hadoop/OtherAssessment_data.txt /user/hadoop/emplo
 
 b. Create and execute a Java Map Reduce job to find total marks scored by employees in all assessments using employee/input as input folder and employee/totScore as output folder
 </pre>
+<b>Assignment 3</b>
+<pre>
+a. Create and execute a Java Map Reduce job to find average marks scored in assessments for each skill using employee/input as input folder and employee/avgScore as output folder
+</pre>
