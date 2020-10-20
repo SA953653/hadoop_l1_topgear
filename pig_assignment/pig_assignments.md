@@ -17,8 +17,7 @@ pig -x mapreduce text_file_word_count.pig
 a. Copy EmpProj.txt and Employee.txt to hdfs
 hdfs dfs -copyFromLocal /home/hadoop/EmpProj.txt /user/hadoop/EmpProj.txt
 hdfs dfs -copyFromLocal /home/hadoop/Employee.txt /user/hadoop/Employee.txt
-
-
+<br/>
 b. Write a Pig Script to get total effort spent by all employees by projectID.
 Employee = LOAD 'Employee.txt' USING PigStorage(',')  AS  (EmpID:chararray,Name:chararray,Band:chararray,DepartmentID:chararray,Salary:float);
 EmpProj = LOAD 'EmpProj.txt' USING PigStorage(',')  AS  (EmpID:chararray,projectID:chararray,year-week:int,EffortHrs:chararray);
