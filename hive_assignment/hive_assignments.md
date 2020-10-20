@@ -1,4 +1,3 @@
-(any 2 out of 3)
 <b>Assignment 1: Create a Managed internal table</b></br>
 <pre>
 a. Connect to Hive CLI
